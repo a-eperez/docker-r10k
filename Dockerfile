@@ -16,4 +16,5 @@ RUN apk add --update --no-cache \
 RUN mkdir -m 600 -p ~/.ssh
 RUN gem install -uN --clear-sources r10k
 
-CMD ["r10k"]
+ENTRYPOINT ["r10k"]
+CMD [ "--help" ]
